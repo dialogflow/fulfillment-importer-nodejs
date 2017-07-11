@@ -1,0 +1,28 @@
+{
+  "name": "youtube-apiai-skill",
+  "version": "1.0.0",
+  "description": "A simple sample showing how to import a Alexa skill into API.AI",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --fix \"**/*.js\"",
+    "start": "firebase serve",
+    "deploy": "firebase deploy",
+    "test": "npm run lint"
+  },
+  "author": "Google Inc.",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "firebase-functions": "^0.5.9",
+    "firebase-admin": "5.0.0",
+    "googleapis": "^20.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-semistandard": "^11.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}

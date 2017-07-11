@@ -1,0 +1,3 @@
+GetPopularVideosIntent What's new on Youtube
+GetPopularVideosIntent What hot right now
+GetPopularVideosIntent What's cool
