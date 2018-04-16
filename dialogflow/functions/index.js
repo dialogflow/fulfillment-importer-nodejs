@@ -46,8 +46,7 @@ class Handler {
   emit (event, data) {
     if (event.startsWith(':')) {
       this.res.json({
-        speech: data,
-        displayText: data
+        fulfillmentText: data
       });
       return;
     }
@@ -56,7 +55,7 @@ class Handler {
   run (req, res) {
     this.req = req;
     this.res = res;
-    this.emit(req.body.result.action || 'LaunchRequest');
+    this.emit(req.body.queryResult.action || 'LaunchRequest');
   }
 }
 

@@ -1,16 +1,15 @@
-# API.AI: Fulfillment Importer Sample
+# Dialogflow: Fulfillment Importer Sample
 
-A simple sample showing how to use API.AI's Importer for Alexa Skills to import a Alexa Skill to API.AI, deploy it to the Google Assistant developer platform, Actions on Google, and export the API.AI agent back to Amazon's Alexa Skill Kit platform.
+A simple sample showing how to use Dialogflow's Importer for Alexa Skills to import a Alexa Skill to Dialogflow, deploy it to the Google Assistant developer platform, Actions on Google, and export the Dialogflow agent back to Amazon's Alexa Skill Kit platform.
 
-Please see https://api.ai/docs/examples/importer-for-alexa-skills for a comprehensive walkthrough of this sample.
-
+Please see https://dialogflow.com/docs/examples/importer-for-alexa-skills for a comprehensive walkthrough of this sample.
 
 ## Setup Instructions
-This sample is divided into two parts, the first in the <code>skill</code> directory and the second in the <code>apiai</code> directory.  The directory <code>skill</code> has all the files for deployment and fulfillment of a simple Alexa Skill that responds to a single query for the most popular videos on YouTube.  When deployed properly to Lambda and Alexa, the Alexa Skill responds with the 5 most popular YouTube videos in the United States at the time.  The directory <code>apiai</code> contains all the Alexa Skill's files imported into API.AI. These include the API.AI agent exported to a zip file and fulfillment designed to be hosted on Cloud Functions for Firebase.
+This sample is divided into two parts, the first in the <code>skill</code> directory and the second in the <code>apiai</code> directory.  The directory <code>skill</code> has all the files for deployment and fulfillment of a simple Alexa Skill that responds to a single query for the most popular videos on YouTube.  When deployed properly to Lambda and Alexa, the Alexa Skill responds with the 5 most popular YouTube videos in the United States at the time.  The directory <code>apiai</code> contains all the Alexa Skill's files imported into Dialogflow. These include the Dialogflow agent exported to a zip file and fulfillment designed to be hosted on Cloud Functions for Firebase.
 
-### Steps to deploy the API.AI agent to Actions on Google
-1. [Sign up](https://console.api.ai/api-client/authorize_url_google/nopopup) or [login](https://console.api.ai/api-client/#/login) to your API.AI account.
-1. Open the API.AI console, click on *Create Agent* in the left navigation and fill in the required fields.
+### Steps to deploy the Dialogflow agent to Actions on Google
+1. [Sign up](https://console.dialogflow.com/api-client/authorize_url_google/nopopup) or [login](https://console.dialogflow.com/api-client/#/login) to your Dialogflow account.
+1. Open the Dialogflow console, click on *Create Agent* in the left navigation and fill in the required fields.
 1. Click *Save* to save the project.
 1. Click on the gear icon to see the project settings.
 1. Select *Export and Import*.
@@ -19,7 +18,7 @@ This sample is divided into two parts, the first in the <code>skill</code> direc
    1. Create a Firebase project in the [Firebase Console](https://console.firebase.google.com) if you don't have one already.
    1. Follow the instructions to [set up and initialize Firebase SDK for Cloud Functions](https://firebase.google.com/docs/functions/get-started#set_up_and_initialize_functions_sdk). Make sure to reply "N" when asked to overwrite existing files by the Firebase CLI.
    1. Run `firebase deploy --only functions` and take note of the endpoint where the fulfillment webhook has been published. It should look like `Function URL (conversationComponent): https://us-central1-YOUR_PROJECT.cloudfunctions.net/conversationComponent`
-1. Go back to the API.AI console and select *Fulfillment* from the left navigation menu. Enable *Webhook*, set the value of *URL* to the `Function URL` from the preiovus step, then click *Save*.
+1. Go back to the Dialogflow console and select *Fulfillment* from the left navigation menu. Enable *Webhook*, set the value of *URL* to the `Function URL` from the preiovus step, then click *Save*.
 1. Select *Integrations* from the left navigation menu and open the *Settings* menu for Actions on Google.
 1. Click *Test*.
 1. Click *View* to open the Actions on Google simulator.
