@@ -13,8 +13,8 @@ This sample is divided into two parts, the first in the <code>skill</code> direc
 1. Click *Save* to save the project.
 1. Click on the gear icon to see the project settings.
 1. Select *Export and Import*.
-1. Select *Restore from zip*. Follow the directions to restore from the `apiai/APIAIAgent.zip` file in this repo.
-1. Deploy the fulfillment webhook provided in the `apiai/functions` folder using [Google Cloud Functions for Firebase](https://firebase.google.com/docs/functions/):
+1. Select *Restore from zip*. Follow the directions to restore from the `dialogflow/DialogflowAgent.zip` file in this repo.
+1. Deploy the fulfillment webhook provided in the `dialogflow/functions` folder using [Google Cloud Functions for Firebase](https://firebase.google.com/docs/functions/):
    1. Create a Firebase project in the [Firebase Console](https://console.firebase.google.com) if you don't have one already.
    1. Follow the instructions to [set up and initialize Firebase SDK for Cloud Functions](https://firebase.google.com/docs/functions/get-started#set_up_and_initialize_functions_sdk). Make sure to reply "N" when asked to overwrite existing files by the Firebase CLI.
    1. Run `firebase deploy --only functions` and take note of the endpoint where the fulfillment webhook has been published. It should look like `Function URL (conversationComponent): https://us-central1-YOUR_PROJECT.cloudfunctions.net/conversationComponent`
