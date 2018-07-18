@@ -13,7 +13,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "firebase-functions": "^0.5.9",
-    "firebase-admin": "5.0.0",
+    "firebase-admin": "~4.2.1",
     "googleapis": "^20.1.0"
   },
   "devDependencies": {
