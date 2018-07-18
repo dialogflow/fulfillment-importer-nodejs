@@ -2,7 +2,7 @@
 
 A simple sample showing how to use Dialogflow's Importer for Alexa Skills to import a Alexa Skill to Dialogflow, deploy it to the Google Assistant developer platform, Actions on Google, and export the Dialogflow agent back to Amazon's Alexa Skill Kit platform.
 
-Check out https://dialogflow.com/docs/examples/importer-for-alexa-skills for a comprehensive walkthrough.
+Check out [this](https://dialogflow.com/docs/examples/importer-for-alexa-skills) for a comprehensive walkthrough.
 
 This sample is divided into two parts: `skill` and `dialogflow` directories.  
 + The `skill` directory has all the files for deployment and fulfillment of a simple Alexa Skill that responds to a single query for the most popular videos on YouTube.  When deployed properly to Lambda and Alexa, the Alexa Skill responds with the 5 most popular YouTube videos in the United States at the time.  
@@ -49,7 +49,7 @@ This sample is divided into two parts: `skill` and `dialogflow` directories.
 <sup>a.</sup>[Further info on initializing Firebase SDK for Cloud Functions](https://firebase.google.com/docs/functions/get-started#set_up_and_initialize_functions_sdk). Make sure to reply "N" when asked to overwrite existing files by the Firebase CLI.
 
 ### Steps to deploy the Alexa Skill to Alexa Skills Kit
-Please see [Alexa's Build An Alexa Fact Skill documentation](https://github.com/alexa/skill-sample-nodejs-fact/blob/master/step-by-step/1-voice-user-interface.md) for information on how to deploy an Alexa Skill.
+Check out [Build An Alexa Fact Skill](https://github.com/alexa/skill-sample-nodejs-fact/blob/en-US/instructions/1-voice-user-interface.md) for information on how to deploy an Alexa Skill.
 
 
 ## How to make contributions?
