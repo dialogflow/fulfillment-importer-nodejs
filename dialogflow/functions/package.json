@@ -12,8 +12,8 @@
   "author": "Google Inc.",
   "license": "Apache-2.0",
   "dependencies": {
-    "firebase-functions": "^0.5.9",
-    "firebase-admin": "~4.2.1",
+    "firebase-functions": "^1.1.0",
+    "firebase-admin": "^5.11.0",
     "googleapis": "^20.1.0"
   },
   "devDependencies": {
