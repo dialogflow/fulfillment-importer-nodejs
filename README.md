@@ -1,4 +1,4 @@
-# Dialogflow: Fulfillment Importer Sample
+# Dialogflow Fulfillment: Importer Sample
 
 A simple sample showing how to use Dialogflow's Importer for Alexa Skills to import a Alexa Skill to Dialogflow, deploy it to the Google Assistant developer platform, Actions on Google, and export the Dialogflow agent back to Amazon's Alexa Skill Kit platform.
 
@@ -11,11 +11,12 @@ This sample is divided into two parts: `skill` and `dialogflow` directories.
 ## Setup Instructions
 
 ### Steps to deploy a Dialogflow Agent to Actions on Google
-1. [Sign up](https://console.dialogflow.com/api-client/authorize_url_google/nopopup) or [login](https://console.dialogflow.com/api-client/#/login) to your Dialogflow account.
-2. In [Dialogflow's console](https://console.dialogflow.com), select **Create Agent** in the left navigation and fill in the required fields and **Save**.
-3. Go to the settings ⚙ > **Export and Import** tab > **Restore from zip**.
+1. Go to **Add to Dialogflow** button below to **Create Agent**:
+
+  [![Alexa-Importer](https://storage.googleapis.com/dialogflow-oneclick/deploy.svg "Alexa-Importer")](https://console.dialogflow.com/api-client/oneclick?templateUrl=https://storage.googleapis.com/dialogflow-oneclick/alexa-importer-agent.zip&agentName=Alexa-Importer-sample)
+2. Go to the settings ⚙ > **Export and Import** tab > **Restore from Zip**.
   + Upload the `dialogflow/DialogflowAgent.zip` file located in this repo.
-4. Deploy the Fulfillment webhook provided in the `dialogflow/functions` folder using [Google Cloud Functions for Firebase](https://firebase.google.com/docs/functions/):
+3. Deploy the Fulfillment webhook provided in the `dialogflow/functions` folder using [Google Cloud Functions for Firebase](https://firebase.google.com/docs/functions/):
    1. Create a Firebase project in the [Firebase Console](https://console.firebase.google.com).
       + You can find the `PROJECT ID` under settings ⚙ in the **Firebase Console > Project Settings > General** tab
    2. Setup/Initialize Firebase SDK for Cloud Functions. For further info<sup> a.</sup>
@@ -35,13 +36,13 @@ This sample is divided into two parts: `skill` and `dialogflow` directories.
         ```
           + The deploy command will output the project console link and visit in browser
           + More generally: `$ firebase deploy --only functions:FUNCTION_NAME`
-5. Once in Firebase Console, from the left menu, go to **> Functions > Dashboard >** copy link listed under Event column
+4. Once in Firebase Console, from the left menu, go to **> Functions > Dashboard >** copy link listed under Event column
           // EX: https://us-central1-<PROJECT_ID>.cloudfunctions.net/<FUNCTION_NAME>
 
-6. Back in the Dialogflow console, from the left menu, select **Fulfillment >** Enable **Webhook >** set the value of **URL** to the `Function URL` from the previous step **> Save**.
-7. Select **Integrations** from the left navigation menu and open the **Settings** menu for Actions on Google.
-8. Select **Test**.
-9. Select **View** to open the Actions on Google simulator.
+5. Back in the Dialogflow console, from the left menu, select **Fulfillment >** Enable **Webhook >** set the value of **URL** to the `Function URL` from the previous step **> Save**.
+6. Select **Integrations** from the left navigation menu and open the **Settings** menu for Actions on Google.
+7. Select **Test**.
+8. Select **View** to open the Actions on Google simulator.
   + Type `Talk to my test app` in the simulator or
   + Say `OK Google, talk to my test app`
 
